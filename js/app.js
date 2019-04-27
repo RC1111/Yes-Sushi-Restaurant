@@ -6,8 +6,7 @@ $(document).ready(function() {
   // sticky navbar less padding. Navbar will stick after first section.
   $(window).scroll(function() {
     let position = $(this).scrollTop();
-    console.log(position);
-    if (position >= 718) {
+    if (position >= 825) {
       $(".navbar").addClass("navbar-background");
       $(".navbar").addClass("fixed-top");
     } else {
@@ -28,7 +27,7 @@ $(document).ready(function() {
         {
           scrollTop: $(target).offset().top - 25
         },
-        3000
+        2000
       );
   });
   // end of smooth scroll // back to top
@@ -42,12 +41,7 @@ $(document).ready(function() {
       $(".back-to-top").removeClass("scrollTop");
     }
   });
-  // ripples
-  $("#header, .info").ripples({
-    dropRadius: 2,
-    perturbance: 0.00001,
-    resolution: 500
-  });
+
   //magnific popup
   $(".parent-container").magnificPopup({
     delegate: "a", // child items selector, by clicking on it popup will open
