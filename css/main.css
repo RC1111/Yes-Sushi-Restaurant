@@ -34,7 +34,7 @@ body {
   font-family: "Nunito", sans-serif;
   color: white;
   background: linear-gradient(rgba(30, 30, 30, 0.7), rgba(30, 30, 30, 0.7)),
-    url(../img/background-2.jpeg) center/cover fixed no-repeat;
+    url(../img/background-2.jpg) center/cover fixed no-repeat;
 }
 
 .order-online {
@@ -53,8 +53,10 @@ body {
 }
 /* Header Section with overlay */
 #header {
-  background-image: url(/img/background-2.jpeg);
-  min-width: calc(100vh - 5px);
+  background-image: url(/img/background-2.jpg);
+  /* min-width: calc(100vh - 5px); */
+  min-height: calc(100vh - 94px);
+
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
